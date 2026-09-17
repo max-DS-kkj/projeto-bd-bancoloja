@@ -6,3 +6,9 @@ CREATE TABLE pagamento(
   id_venda bigint NOT NULL
 );
 
+CREATE TABLE categoria(
+  id_categoria SERIAL PRIMARY KEY,
+  nome varchar(100) NOT NULL,
+  descricao varchar(255)
+);
+
