@@ -12,3 +12,11 @@ CREATE TABLE categoria(
   descricao varchar(255)
 );
 
+CREATE TABLE venda(
+  id_venda SERIAL PRIMARY KEY,
+  data datetime,
+  valor_total decimal(10,2) NOT NULL,
+  origim varchar(255),
+  id_cliente bigint NOT NULL,
+  id_loja bigint NOT NULL
+);
